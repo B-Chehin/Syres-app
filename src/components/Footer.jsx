@@ -2,55 +2,54 @@ import React from 'react';
 import { Instagram, Linkedin, Facebook, MapPin, Phone, Mail } from 'lucide-react';
 
 const Footer = () => {
-    return (
-        <footer className="footer">
-            <div className="container">
-                <div className="footer-grid">
-                    <div className="footer-brand">
-                        <h3 className="footer-logo">Syres Construcciones</h3>
-                        <p className="footer-desc">
-                            Construyendo sueños con calidad y compromiso desde 2010. Tu socio ideal para proyectos residenciales y comerciales.
-                        </p>
-                        <div className="social-links">
-                            <a href="#" className="social-link"><Instagram size={20} /></a>
-                            <a href="#" className="social-link"><Linkedin size={20} /></a>
-                            <a href="#" className="social-link"><Facebook size={20} /></a>
-                        </div>
-                    </div>
-
-                    <div className="footer-links">
-                        <h4>Enlaces Rápidos</h4>
-                        <ul>
-                            <li><a href="#hero">Inicio</a></li>
-                            <li><a href="#projects">Proyectos</a></li>
-                            <li><a href="#services">Servicios</a></li>
-                            <li><a href="#contact">Contacto</a></li>
-                        </ul>
-                    </div>
-
-                    <div className="footer-contact">
-                        <h4>Contacto</h4>
-                        <div className="contact-item">
-                            <MapPin size={18} />
-                            <span>Av. del Libertador 1234, CABA</span>
-                        </div>
-                        <div className="contact-item">
-                            <Phone size={18} />
-                            <span>+54 11 1234-5678</span>
-                        </div>
-                        <div className="contact-item">
-                            <Mail size={18} />
-                            <span>contacto@syres.com.ar</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="footer-bottom">
-                    <p>&copy; {new Date().getFullYear()} Syres Construcciones. Todos los derechos reservados.</p>
-                </div>
+  return (
+    <footer className="footer">
+      <div className="container">
+        <div className="footer-grid">
+          <div className="footer-brand">
+            <h3 className="footer-logo">Syres Construcciones</h3>
+            <p className="footer-desc">
+              Construyendo sueños con calidad y compromiso desde 2010. Tu socio ideal para proyectos residenciales y comerciales.
+            </p>
+            <div className="social-links">
+              <a href="https://www.instagram.com/syres.construcciones/" className="social-link"><Instagram size={20} /></a>
+              <a href="https://www.facebook.com/profile.php?id=100085890731046&locale=es_LA" className="social-link"><Facebook size={20} /></a>
             </div>
+          </div>
 
-            <style>{`
+          <div className="footer-links">
+            <h4>Enlaces Rápidos</h4>
+            <ul>
+              <li><a href="#hero">Inicio</a></li>
+              <li><a href="#projects">Proyectos</a></li>
+              <li><a href="#services">Servicios</a></li>
+              <li><a href="#contact">Contacto</a></li>
+            </ul>
+          </div>
+
+          <div className="footer-contact">
+            <h4>Contacto</h4>
+            <div className="contact-item">
+              <MapPin size={18} />
+              <span>Av. del Libertador 1234, CABA</span>
+            </div>
+            <div className="contact-item">
+              <Phone size={18} />
+              <span>+54 9 11 5402-2693</span>
+            </div>
+            <div className="contact-item">
+              <Mail size={18} />
+              <span>syresconstructora@gmail.com</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="footer-bottom">
+          <p>&copy; {new Date().getFullYear()} Syres Construcciones. Todos los derechos reservados.</p>
+        </div>
+      </div>
+
+      <style>{`
         .footer {
           background-color: var(--color-secondary);
           color: var(--color-white);
@@ -135,8 +134,8 @@ const Footer = () => {
           }
         }
       `}</style>
-        </footer>
-    );
+    </footer>
+  );
 };
 
 export default Footer;
